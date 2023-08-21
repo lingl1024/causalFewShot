@@ -1,0 +1,507 @@
+Namespace(alpha=100.0, augment_epoch=10, baseline_alpha=1, baseline_beta=1.17, beta=0.5, checkpoint='../model_large.pth', dataset='ImageNet', drop_prob=0.5, lr=0.001, train_epoch=20, train_epoch_d=80)
+load checkpoint from ../model_large.pth
+1000 classes, 1281167 training images before sampling, 50000 testing images
+Load data finished.
+start saving blip testing image features
+start saving training image features
+start saving testing image features
+start getting text features.
+finish getting text features. start getting image features
+BLIP Top-1 accuracy: 47.48, with zero-shot learning
+
+CLIP Top-1 accuracy: 60.32, with zero-shot learning
+
+AdapterV2 Top-1 accuracy: 61.81, without training
+
+Tip-Adapter-F
+Train time: 0 / 20
+LR: 0.000994, Acc: 0.6408 (10253.0/16000), Loss: 1.3676
+Testing Top-1 Accuracy: 63.86
+
+Train time: 1 / 20
+LR: 0.000976, Acc: 0.6713 (10740.0/16000), Loss: 1.2497
+Testing Top-1 Accuracy: 64.50
+
+Train time: 2 / 20
+LR: 0.000946, Acc: 0.6883 (11013.0/16000), Loss: 1.1691
+Testing Top-1 Accuracy: 64.71
+
+Train time: 3 / 20
+LR: 0.000905, Acc: 0.7025 (11240.0/16000), Loss: 1.1232
+Testing Top-1 Accuracy: 64.95
+
+Train time: 4 / 20
+LR: 0.000854, Acc: 0.7133 (11413.0/16000), Loss: 1.0708
+Testing Top-1 Accuracy: 64.95
+
+Train time: 5 / 20
+LR: 0.000794, Acc: 0.7264 (11623.0/16000), Loss: 1.0283
+Testing Top-1 Accuracy: 64.94
+
+Train time: 6 / 20
+LR: 0.000727, Acc: 0.7437 (11899.0/16000), Loss: 0.9734
+Testing Top-1 Accuracy: 65.18
+
+Train time: 7 / 20
+LR: 0.000655, Acc: 0.7507 (12011.0/16000), Loss: 0.9279
+Testing Top-1 Accuracy: 65.23
+
+Train time: 8 / 20
+LR: 0.000578, Acc: 0.7651 (12242.0/16000), Loss: 0.9032
+Testing Top-1 Accuracy: 65.27
+
+Train time: 9 / 20
+LR: 0.000500, Acc: 0.7674 (12278.0/16000), Loss: 0.8759
+Testing Top-1 Accuracy: 65.30
+
+Train time: 10 / 20
+LR: 0.000422, Acc: 0.7789 (12462.0/16000), Loss: 0.8471
+Testing Top-1 Accuracy: 65.30
+
+Train time: 11 / 20
+LR: 0.000345, Acc: 0.7852 (12563.0/16000), Loss: 0.8252
+Testing Top-1 Accuracy: 65.34
+
+Train time: 12 / 20
+LR: 0.000273, Acc: 0.7914 (12663.0/16000), Loss: 0.8027
+Testing Top-1 Accuracy: 65.38
+
+Train time: 13 / 20
+LR: 0.000206, Acc: 0.7957 (12731.0/16000), Loss: 0.7929
+Testing Top-1 Accuracy: 65.39
+
+Train time: 14 / 20
+LR: 0.000146, Acc: 0.7984 (12775.0/16000), Loss: 0.7783
+Testing Top-1 Accuracy: 65.32
+
+Train time: 15 / 20
+LR: 0.000095, Acc: 0.8024 (12839.0/16000), Loss: 0.7697
+Testing Top-1 Accuracy: 65.32
+
+Train time: 16 / 20
+LR: 0.000054, Acc: 0.8046 (12873.0/16000), Loss: 0.7648
+Testing Top-1 Accuracy: 65.35
+
+Train time: 17 / 20
+LR: 0.000024, Acc: 0.8026 (12841.0/16000), Loss: 0.7618
+Testing Top-1 Accuracy: 65.33
+
+Train time: 18 / 20
+LR: 0.000006, Acc: 0.8076 (12922.0/16000), Loss: 0.7540
+Testing Top-1 Accuracy: 65.34
+
+Train time: 19 / 20
+LR: 0.000000, Acc: 0.8026 (12841.0/16000), Loss: 0.7611
+Testing Top-1 Accuracy: 65.34
+
+Best Testing Top-1 Accuracy: 65.39, at Epoch: 13
+##########################################################
+
+Ensemble
+Train time: 0 / 20
+LR: 0.000994, Acc: 0.7054 (11287.0/16000), Loss: 1.1757
+Testing Top-1 Accuracy: 70.48
+
+Train time: 1 / 20
+LR: 0.000976, Acc: 0.7469 (11951.0/16000), Loss: 0.9608
+Testing Top-1 Accuracy: 71.40
+
+Train time: 2 / 20
+LR: 0.000946, Acc: 0.7594 (12150.0/16000), Loss: 0.8898
+Testing Top-1 Accuracy: 71.73
+
+Train time: 3 / 20
+LR: 0.000905, Acc: 0.7718 (12349.0/16000), Loss: 0.8365
+Testing Top-1 Accuracy: 72.07
+
+Train time: 4 / 20
+LR: 0.000854, Acc: 0.7755 (12408.0/16000), Loss: 0.8062
+Testing Top-1 Accuracy: 72.03
+
+Train time: 5 / 20
+LR: 0.000794, Acc: 0.7882 (12611.0/16000), Loss: 0.7637
+Testing Top-1 Accuracy: 72.31
+
+Train time: 6 / 20
+LR: 0.000727, Acc: 0.7951 (12721.0/16000), Loss: 0.7367
+Testing Top-1 Accuracy: 72.45
+
+Train time: 7 / 20
+LR: 0.000655, Acc: 0.8018 (12829.0/16000), Loss: 0.7116
+Testing Top-1 Accuracy: 72.45
+
+Train time: 8 / 20
+LR: 0.000578, Acc: 0.8081 (12930.0/16000), Loss: 0.6929
+Testing Top-1 Accuracy: 72.55
+
+Train time: 9 / 20
+LR: 0.000500, Acc: 0.8129 (13006.0/16000), Loss: 0.6732
+Testing Top-1 Accuracy: 72.65
+
+Train time: 10 / 20
+LR: 0.000422, Acc: 0.8217 (13147.0/16000), Loss: 0.6477
+Testing Top-1 Accuracy: 72.68
+
+Train time: 11 / 20
+LR: 0.000345, Acc: 0.8249 (13199.0/16000), Loss: 0.6403
+Testing Top-1 Accuracy: 72.71
+
+Train time: 12 / 20
+LR: 0.000273, Acc: 0.8296 (13274.0/16000), Loss: 0.6251
+Testing Top-1 Accuracy: 72.73
+
+Train time: 13 / 20
+LR: 0.000206, Acc: 0.8338 (13341.0/16000), Loss: 0.6047
+Testing Top-1 Accuracy: 72.77
+
+Train time: 14 / 20
+LR: 0.000146, Acc: 0.8319 (13311.0/16000), Loss: 0.6105
+Testing Top-1 Accuracy: 72.74
+
+Train time: 15 / 20
+LR: 0.000095, Acc: 0.8325 (13320.0/16000), Loss: 0.5991
+Testing Top-1 Accuracy: 72.75
+
+Train time: 16 / 20
+LR: 0.000054, Acc: 0.8376 (13401.0/16000), Loss: 0.5934
+Testing Top-1 Accuracy: 72.74
+
+Train time: 17 / 20
+LR: 0.000024, Acc: 0.8363 (13381.0/16000), Loss: 0.5951
+Testing Top-1 Accuracy: 72.74
+
+Train time: 18 / 20
+LR: 0.000006, Acc: 0.8392 (13427.0/16000), Loss: 0.5973
+Testing Top-1 Accuracy: 72.73
+
+Train time: 19 / 20
+LR: 0.000000, Acc: 0.8337 (13339.0/16000), Loss: 0.6013
+Testing Top-1 Accuracy: 72.73
+
+Best Testing Top-1 Accuracy: 72.77, at Epoch: 13
+##########################################################
+
+Stochastic Mapping
+Train time: 0 / 80
+LR: 0.001000, Acc: 0.5113 (8181.0/16000), Loss: 2.1191
+Testing Top-1 Accuracy: 63.00
+
+Train time: 1 / 80
+LR: 0.000998, Acc: 0.5431 (8689.0/16000), Loss: 1.9221
+Testing Top-1 Accuracy: 63.75
+
+Train time: 2 / 80
+LR: 0.000997, Acc: 0.5605 (8968.0/16000), Loss: 1.8201
+Testing Top-1 Accuracy: 64.20
+
+Train time: 3 / 80
+LR: 0.000994, Acc: 0.5767 (9228.0/16000), Loss: 1.7238
+Testing Top-1 Accuracy: 64.44
+
+Train time: 4 / 80
+LR: 0.000990, Acc: 0.5886 (9417.0/16000), Loss: 1.6641
+Testing Top-1 Accuracy: 64.63
+
+Train time: 5 / 80
+LR: 0.000986, Acc: 0.6021 (9633.0/16000), Loss: 1.5837
+Testing Top-1 Accuracy: 64.60
+
+Train time: 6 / 80
+LR: 0.000981, Acc: 0.6166 (9866.0/16000), Loss: 1.5117
+Testing Top-1 Accuracy: 65.09
+
+Train time: 7 / 80
+LR: 0.000976, Acc: 0.6263 (10021.0/16000), Loss: 1.4323
+Testing Top-1 Accuracy: 65.00
+
+Train time: 8 / 80
+LR: 0.000969, Acc: 0.6388 (10221.0/16000), Loss: 1.4022
+Testing Top-1 Accuracy: 65.13
+
+Train time: 9 / 80
+LR: 0.000962, Acc: 0.6471 (10354.0/16000), Loss: 1.3512
+Testing Top-1 Accuracy: 65.18
+
+Train time: 10 / 80
+LR: 0.000954, Acc: 0.6631 (10610.0/16000), Loss: 1.2772
+Testing Top-1 Accuracy: 65.27
+
+Train time: 11 / 80
+LR: 0.000946, Acc: 0.6687 (10699.0/16000), Loss: 1.2557
+Testing Top-1 Accuracy: 65.07
+
+Train time: 12 / 80
+LR: 0.000936, Acc: 0.6801 (10881.0/16000), Loss: 1.2134
+Testing Top-1 Accuracy: 65.00
+
+Train time: 13 / 80
+LR: 0.000926, Acc: 0.6886 (11018.0/16000), Loss: 1.1629
+Testing Top-1 Accuracy: 65.01
+
+Train time: 14 / 80
+LR: 0.000916, Acc: 0.6952 (11123.0/16000), Loss: 1.1236
+Testing Top-1 Accuracy: 64.96
+
+Train time: 15 / 80
+LR: 0.000905, Acc: 0.6978 (11165.0/16000), Loss: 1.1190
+Testing Top-1 Accuracy: 65.10
+
+Train time: 16 / 80
+LR: 0.000893, Acc: 0.7059 (11294.0/16000), Loss: 1.0694
+Testing Top-1 Accuracy: 64.97
+
+Train time: 17 / 80
+LR: 0.000880, Acc: 0.7201 (11521.0/16000), Loss: 1.0338
+Testing Top-1 Accuracy: 64.99
+
+Train time: 18 / 80
+LR: 0.000867, Acc: 0.7247 (11595.0/16000), Loss: 1.0002
+Testing Top-1 Accuracy: 64.92
+
+Train time: 19 / 80
+LR: 0.000854, Acc: 0.7288 (11661.0/16000), Loss: 0.9801
+Testing Top-1 Accuracy: 64.79
+
+Train time: 20 / 80
+LR: 0.000839, Acc: 0.7361 (11777.0/16000), Loss: 0.9519
+Testing Top-1 Accuracy: 64.85
+
+Train time: 21 / 80
+LR: 0.000825, Acc: 0.7476 (11961.0/16000), Loss: 0.9361
+Testing Top-1 Accuracy: 64.74
+
+Train time: 22 / 80
+LR: 0.000810, Acc: 0.7491 (11985.0/16000), Loss: 0.9053
+Testing Top-1 Accuracy: 64.69
+
+Train time: 23 / 80
+LR: 0.000794, Acc: 0.7496 (11994.0/16000), Loss: 0.8995
+Testing Top-1 Accuracy: 64.73
+
+Train time: 24 / 80
+LR: 0.000778, Acc: 0.7564 (12102.0/16000), Loss: 0.8712
+Testing Top-1 Accuracy: 64.66
+
+Train time: 25 / 80
+LR: 0.000761, Acc: 0.7629 (12207.0/16000), Loss: 0.8418
+Testing Top-1 Accuracy: 64.50
+
+Train time: 26 / 80
+LR: 0.000744, Acc: 0.7736 (12378.0/16000), Loss: 0.8168
+Testing Top-1 Accuracy: 64.60
+
+Train time: 27 / 80
+LR: 0.000727, Acc: 0.7728 (12365.0/16000), Loss: 0.8002
+Testing Top-1 Accuracy: 64.48
+
+Train time: 28 / 80
+LR: 0.000709, Acc: 0.7784 (12455.0/16000), Loss: 0.7858
+Testing Top-1 Accuracy: 64.62
+
+Train time: 29 / 80
+LR: 0.000691, Acc: 0.7824 (12518.0/16000), Loss: 0.7737
+Testing Top-1 Accuracy: 64.65
+
+Train time: 30 / 80
+LR: 0.000673, Acc: 0.7853 (12565.0/16000), Loss: 0.7646
+Testing Top-1 Accuracy: 64.45
+
+Train time: 31 / 80
+LR: 0.000655, Acc: 0.7904 (12647.0/16000), Loss: 0.7327
+Testing Top-1 Accuracy: 64.57
+
+Train time: 32 / 80
+LR: 0.000636, Acc: 0.7909 (12654.0/16000), Loss: 0.7353
+Testing Top-1 Accuracy: 64.47
+
+Train time: 33 / 80
+LR: 0.000617, Acc: 0.8019 (12830.0/16000), Loss: 0.6950
+Testing Top-1 Accuracy: 64.40
+
+Train time: 34 / 80
+LR: 0.000598, Acc: 0.8029 (12847.0/16000), Loss: 0.6980
+Testing Top-1 Accuracy: 64.36
+
+Train time: 35 / 80
+LR: 0.000578, Acc: 0.8008 (12813.0/16000), Loss: 0.6878
+Testing Top-1 Accuracy: 64.43
+
+Train time: 36 / 80
+LR: 0.000559, Acc: 0.8044 (12870.0/16000), Loss: 0.6863
+Testing Top-1 Accuracy: 64.42
+
+Train time: 37 / 80
+LR: 0.000539, Acc: 0.8017 (12828.0/16000), Loss: 0.6841
+Testing Top-1 Accuracy: 64.41
+
+Train time: 38 / 80
+LR: 0.000520, Acc: 0.8173 (13077.0/16000), Loss: 0.6496
+Testing Top-1 Accuracy: 64.32
+
+Train time: 39 / 80
+LR: 0.000500, Acc: 0.8142 (13027.0/16000), Loss: 0.6582
+Testing Top-1 Accuracy: 64.37
+
+Train time: 40 / 80
+LR: 0.000480, Acc: 0.8171 (13073.0/16000), Loss: 0.6409
+Testing Top-1 Accuracy: 64.21
+
+Train time: 41 / 80
+LR: 0.000461, Acc: 0.8223 (13157.0/16000), Loss: 0.6254
+Testing Top-1 Accuracy: 64.33
+
+Train time: 42 / 80
+LR: 0.000441, Acc: 0.8199 (13119.0/16000), Loss: 0.6257
+Testing Top-1 Accuracy: 64.38
+
+Train time: 43 / 80
+LR: 0.000422, Acc: 0.8226 (13162.0/16000), Loss: 0.6179
+Testing Top-1 Accuracy: 64.25
+
+Train time: 44 / 80
+LR: 0.000402, Acc: 0.8276 (13241.0/16000), Loss: 0.6070
+Testing Top-1 Accuracy: 64.29
+
+Train time: 45 / 80
+LR: 0.000383, Acc: 0.8304 (13287.0/16000), Loss: 0.6006
+Testing Top-1 Accuracy: 64.23
+
+Train time: 46 / 80
+LR: 0.000364, Acc: 0.8289 (13262.0/16000), Loss: 0.5887
+Testing Top-1 Accuracy: 64.23
+
+Train time: 47 / 80
+LR: 0.000345, Acc: 0.8321 (13314.0/16000), Loss: 0.5833
+Testing Top-1 Accuracy: 64.23
+
+Train time: 48 / 80
+LR: 0.000327, Acc: 0.8373 (13397.0/16000), Loss: 0.5709
+Testing Top-1 Accuracy: 64.19
+
+Train time: 49 / 80
+LR: 0.000309, Acc: 0.8357 (13371.0/16000), Loss: 0.5744
+Testing Top-1 Accuracy: 64.25
+
+Train time: 50 / 80
+LR: 0.000291, Acc: 0.8327 (13324.0/16000), Loss: 0.5777
+Testing Top-1 Accuracy: 64.18
+
+Train time: 51 / 80
+LR: 0.000273, Acc: 0.8366 (13386.0/16000), Loss: 0.5732
+Testing Top-1 Accuracy: 64.19
+
+Train time: 52 / 80
+LR: 0.000256, Acc: 0.8377 (13403.0/16000), Loss: 0.5560
+Testing Top-1 Accuracy: 64.13
+
+Train time: 53 / 80
+LR: 0.000239, Acc: 0.8407 (13451.0/16000), Loss: 0.5601
+Testing Top-1 Accuracy: 64.20
+
+Train time: 54 / 80
+LR: 0.000222, Acc: 0.8406 (13449.0/16000), Loss: 0.5475
+Testing Top-1 Accuracy: 64.23
+
+Train time: 55 / 80
+LR: 0.000206, Acc: 0.8429 (13487.0/16000), Loss: 0.5488
+Testing Top-1 Accuracy: 64.16
+
+Train time: 56 / 80
+LR: 0.000190, Acc: 0.8452 (13523.0/16000), Loss: 0.5382
+Testing Top-1 Accuracy: 64.21
+
+Train time: 57 / 80
+LR: 0.000175, Acc: 0.8521 (13633.0/16000), Loss: 0.5270
+Testing Top-1 Accuracy: 64.17
+
+Train time: 58 / 80
+LR: 0.000161, Acc: 0.8482 (13572.0/16000), Loss: 0.5298
+Testing Top-1 Accuracy: 64.22
+
+Train time: 59 / 80
+LR: 0.000146, Acc: 0.8501 (13602.0/16000), Loss: 0.5327
+Testing Top-1 Accuracy: 64.12
+
+Train time: 60 / 80
+LR: 0.000133, Acc: 0.8421 (13474.0/16000), Loss: 0.5522
+Testing Top-1 Accuracy: 64.14
+
+Train time: 61 / 80
+LR: 0.000120, Acc: 0.8407 (13452.0/16000), Loss: 0.5428
+Testing Top-1 Accuracy: 64.16
+
+Train time: 62 / 80
+LR: 0.000107, Acc: 0.8432 (13491.0/16000), Loss: 0.5416
+Testing Top-1 Accuracy: 64.11
+
+Train time: 63 / 80
+LR: 0.000095, Acc: 0.8492 (13588.0/16000), Loss: 0.5289
+Testing Top-1 Accuracy: 64.14
+
+Train time: 64 / 80
+LR: 0.000084, Acc: 0.8491 (13586.0/16000), Loss: 0.5182
+Testing Top-1 Accuracy: 64.13
+
+Train time: 65 / 80
+LR: 0.000074, Acc: 0.8489 (13582.0/16000), Loss: 0.5262
+Testing Top-1 Accuracy: 64.14
+
+Train time: 66 / 80
+LR: 0.000064, Acc: 0.8466 (13546.0/16000), Loss: 0.5377
+Testing Top-1 Accuracy: 64.10
+
+Train time: 67 / 80
+LR: 0.000054, Acc: 0.8496 (13594.0/16000), Loss: 0.5168
+Testing Top-1 Accuracy: 64.13
+
+Train time: 68 / 80
+LR: 0.000046, Acc: 0.8507 (13611.0/16000), Loss: 0.5339
+Testing Top-1 Accuracy: 64.14
+
+Train time: 69 / 80
+LR: 0.000038, Acc: 0.8507 (13611.0/16000), Loss: 0.5299
+Testing Top-1 Accuracy: 64.12
+
+Train time: 70 / 80
+LR: 0.000031, Acc: 0.8479 (13567.0/16000), Loss: 0.5358
+Testing Top-1 Accuracy: 64.12
+
+Train time: 71 / 80
+LR: 0.000024, Acc: 0.8518 (13629.0/16000), Loss: 0.5191
+Testing Top-1 Accuracy: 64.14
+
+Train time: 72 / 80
+LR: 0.000019, Acc: 0.8516 (13626.0/16000), Loss: 0.5211
+Testing Top-1 Accuracy: 64.14
+
+Train time: 73 / 80
+LR: 0.000014, Acc: 0.8514 (13623.0/16000), Loss: 0.5206
+Testing Top-1 Accuracy: 64.14
+
+Train time: 74 / 80
+LR: 0.000010, Acc: 0.8501 (13602.0/16000), Loss: 0.5196
+Testing Top-1 Accuracy: 64.14
+
+Train time: 75 / 80
+LR: 0.000006, Acc: 0.8506 (13609.0/16000), Loss: 0.5255
+Testing Top-1 Accuracy: 64.13
+
+Train time: 76 / 80
+LR: 0.000003, Acc: 0.8509 (13614.0/16000), Loss: 0.5250
+Testing Top-1 Accuracy: 64.13
+
+Train time: 77 / 80
+LR: 0.000002, Acc: 0.8535 (13656.0/16000), Loss: 0.5146
+Testing Top-1 Accuracy: 64.13
+
+Train time: 78 / 80
+LR: 0.000000, Acc: 0.8535 (13656.0/16000), Loss: 0.5197
+Testing Top-1 Accuracy: 64.13
+
+Train time: 79 / 80
+LR: 0.000000, Acc: 0.8536 (13657.0/16000), Loss: 0.5141
+Testing Top-1 Accuracy: 64.13
+
+Best Testing Top-1 Accuracy: 65.27, at Epoch: 10
+##########################################################
+
